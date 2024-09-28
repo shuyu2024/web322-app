@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "category": "USA"
+    },
+    {
+      "id": 2,
+      "category": "Mexico"
+    },
+    {
+      "id": 3,
+      "category": "Canada"
+    },
+    {
+      "id": 4,
+      "category": "Bahamas"
+    },
+    {
+      "id": 5,
+      "category": "Europe"
+    }
+    
+]

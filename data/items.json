@@ -1,0 +1,302 @@
+[
+   {
+      "id":1,
+      "category":1,
+      "saleDate":"2023-09-20",
+      "featureImage":"https://cdn.pixabay.com/photo/2014/12/13/15/42/alaska-566722_1280.jpg",
+      "price":2999.99,
+      "title":"Alaska 10 days",
+      "body":"In this awe-inspiring place also known as Alaska, memorable experiences are an everyday occurrence.",
+      "published":true
+   },
+   {
+      "id":1,
+      "category":1,
+      "saleDate":"2023-09-15",
+      "featureImage":"https://cdn.pixabay.com/photo/2023/04/30/22/01/ocean-7961695_1280.jpg",
+      "price":4999.99,
+      "title":"California 20 days",
+      "body":"All Dreams Welcome",
+      "published":true
+   },
+   {
+      "id":2,
+      "category":2,
+      "postDate":"2023-09-16",
+      "featureImage":"https://cdn.pixabay.com/photo/2016/02/29/06/43/cancun-1228131_1280.jpg",
+      "price":3999.99,
+      "title":"Cancun 6 days",
+      "body":" All inclusive relax plan",
+      "published":true
+   },
+   {
+      "id":3,
+      "category":3,
+      "saleDate":"2023-09-17",
+      "featureImage":"https://cdn.pixabay.com/photo/2020/04/18/13/39/yellowknife-5059224_1280.jpg",
+      "price":3459.99,
+      "title":"Yellowknife Aurora",
+      "body":"Aurora bring lucky to you",
+      "published":true
+   },
+      {
+      "id": 4,
+      "category": 4,
+      "saleDate": "2023-09-17",
+      "featureImage": "https://cdn.pixabay.com/photo/2013/08/12/18/10/staniel-cay-171908_1280.jpg",
+      "price": 3459.99,
+      "title": "Bahamas",
+      "body": "Paradise is closer than you think",
+      "published": true
+      },
+      {
+         "id": 6,
+         "category": 5,
+         "saleDate": "2023-10-01",
+         "featureImage": "https://cdn.pixabay.com/photo/2017/06/05/11/01/airport-2373727_1280.jpg",
+         "price": 2550.99,
+         "title": "Explore Paris",
+         "body": "Explore the romantic streets of Paris and its enchanting history.",
+         "published": true
+      },
+     {
+         "id": 7,
+         "category": 5,
+         "saleDate": "2023-10-15",
+         "featureImage": "https://cdn.pixabay.com/photo/2016/11/08/05/26/woman-1807533_1280.jpg",
+         "price": 4500.99,
+         "title": "Italian Escape",
+         "body": "Discover the rich history and vibrant culture of Italy.",
+         "published": true
+     },
+     {
+         "id": 8,
+         "category": 1,
+         "saleDate": "2023-10-20",
+         "featureImage": "https://cdn.pixabay.com/photo/2016/08/01/20/34/girl-1561988_1280.jpg",
+         "price": 2800.99,
+         "title": "New York in a Week",
+         "body": "See what the Big Apple has to offer with our exclusive guided tour.",
+         "published": true
+     },
+     {
+         "id": 9,
+         "category": 1,
+         "saleDate": "2023-11-01",
+         "featureImage": "https://cdn.pixabay.com/photo/2016/11/29/09/08/arch-1868668_1280.jpg",
+         "price": 3200.99,
+         "title": "Historic Boston",
+         "body": "Dive into the rich history of Boston with this cultural exploration package.",
+         "published": true
+     },
+      {
+          "id": 10,
+          "category": 2,
+          "saleDate": "2023-11-10",
+          "featureImage": "https://cdn.pixabay.com/photo/2017/03/27/14/49/beach-2179183_1280.jpg",
+          "price": 1999.99,
+          "title": "Beachfront Relaxation in Cancun",
+          "body": "Enjoy a tranquil retreat on the white sands of Cancun, with all-inclusive options available.",
+          "published": true
+      },
+      {
+          "id": 11,
+          "category": 3,
+          "saleDate": "2023-11-15",
+          "featureImage": "https://cdn.pixabay.com/photo/2016/11/23/14/45/canada-1852110_1280.jpg",
+          "price": 2999.99,
+          "title": "Canadian Rockies Adventure",
+          "body": "Explore the breathtaking landscapes of the Canadian Rockies with our guided tours.",
+          "published": true
+      },
+      {
+          "id": 12,
+          "category": 4,
+          "saleDate": "2023-11-20",
+          "featureImage": "https://cdn.pixabay.com/photo/2016/06/24/10/47/architecture-1477041_1280.jpg",
+          "price": 3500.99,
+          "title": "Discover the Bahamas",
+          "body": "Island paradise awaits in the heart of the Caribbean. Dive, relax, and explore.",
+          "published": true
+      },
+      {
+          "id": 13,
+          "category": 5,
+          "saleDate": "2023-12-01",
+          "featureImage": "https://cdn.pixabay.com/photo/2015/09/09/16/05/rome-931834_1280.jpg",
+          "price": 4100.99,
+          "title": "Rome and Beyond",
+          "body": "A historical journey through Rome, Naples, and Florence with expert guides.",
+          "published": true
+      },
+      {
+          "id": 14,
+          "category": 1,
+          "saleDate": "2023-12-10",
+          "featureImage": "https://cdn.pixabay.com/photo/2017/06/14/18/39/mountain-2402631_1280.jpg",
+          "price": 3200.99,
+          "title": "Alaskan Wilderness",
+          "body": "Get close to nature in Alaska. Discover wildlife and pristine landscapes.",
+          "published": true
+      },
+      {
+          "id": 15,
+          "category": 1,
+          "saleDate": "2023-12-15",
+          "featureImage": "https://cdn.pixabay.com/photo/2016/01/19/17/59/new-york-city-1149173_1280.jpg",
+          "price": 3600.99,
+          "title": "New York City Explorer",
+          "body": "Experience the never-sleeping city of New York and its incredible cultural landmarks.",
+          "published": true
+      },
+      {
+          "id": 16,
+          "category": 2,
+          "saleDate": "2023-12-20",
+          "featureImage": "https://cdn.pixabay.com/photo/2017/12/17/08/12/fantastic-3024788_1280.jpg",
+          "price": 2200.99,
+          "title": "Mexican Heritage Tour",
+          "body": "Dive deep into the history and culture of ancient Mexican civilizations.",
+          "published": true
+      },
+      {
+          "id": 17,
+          "category": 3,
+          "saleDate": "2023-12-25",
+          "featureImage": "https://cdn.pixabay.com/photo/2015/11/07/11/16/moraine-lake-1031769_1280.jpg",
+          "price": 2500.99,
+          "title": "Lakes of Canada",
+          "body": "Explore the serene lakes and beautiful landscapes of Canada in this relaxing tour.",
+          "published": true
+      },
+      {
+          "id": 18,
+          "category": 4,
+          "saleDate": "2024-01-01",
+          "featureImage": "https://cdn.pixabay.com/photo/2019/05/28/00/15/indoors-4234071_1280.jpg",
+          "price": 2900.99,
+          "title": "Luxury Nassau Getaway",
+          "body": "Indulge in a luxurious stay at the top resorts in Nassau, with private beaches and exclusive amenities.",
+          "published": true
+      },
+      {
+         "id": 19,
+         "category": 5,
+         "saleDate": "2024-01-10",
+         "featureImage": "https://cdn.pixabay.com/photo/2014/12/16/22/25/sunset-570881_1280.jpg",
+         "price": 4700.99,
+         "title": "Venice and the Veneto",
+         "body": "Experience the romance of Venice and explore the rich history of the Veneto region.",
+         "published": true
+     },
+     {
+      "id": 20,
+      "category": 1,
+      "saleDate": "2024-01-20",
+      "featureImage": "https://cdn.pixabay.com/photo/2016/08/11/09/33/usa-1583467_1280.jpg",
+      "price": 2800.00,
+      "title": "Discover the USA Coast to Coast",
+      "body": "Travel from New York to California in this epic coast-to-coast adventure.",
+      "published": true
+  },
+  {
+      "id": 21,
+      "category": 2,
+      "saleDate": "2024-02-01",
+      "featureImage": "https://cdn.pixabay.com/photo/2016/01/19/18/01/mexico-1151129_1280.jpg",
+      "price": 3100.00,
+      "title": "Mexico City Cultural Fiesta",
+      "body": "Explore the vibrant culture and bustling streets of Mexico City.",
+      "published": true
+  },
+  {
+      "id": 22,
+      "category": 3,
+      "saleDate": "2024-02-15",
+      "featureImage": "https://cdn.pixabay.com/photo/2016/11/22/19/08/bridge-1850650_1280.jpg",
+      "price": 3300.00,
+      "title": "Vancouver to Banff Rail Journey",
+      "body": "Journey through the stunning landscapes of British Columbia and Alberta by rail.",
+      "published": true
+  },
+  {
+      "id": 23,
+      "category": 4,
+      "saleDate": "2024-03-01",
+      "featureImage": "https://cdn.pixabay.com/photo/2017/06/05/11/01/airport-2373727_1280.jpg",
+      "price": 2200.00,
+      "title": "Island Hopping in the Bahamas",
+      "body": "Visit the best islands in the Bahamas with guided tours and luxury stays.",
+      "published": true
+  },
+  {
+      "id": 24,
+      "category": 5,
+      "saleDate": "2024-03-15",
+      "featureImage": "https://cdn.pixabay.com/photo/2016/08/01/20/34/girl-1561988_1280.jpg",
+      "price": 3650.00,
+      "title": "Grecian Delights",
+      "body": "Experience the history and beauty of Greece with a focus on Athens and the islands.",
+      "published": true
+  },
+  {
+      "id": 25,
+      "category": 5,
+      "saleDate": "2024-04-01",
+      "featureImage": "https://cdn.pixabay.com/photo/2015/09/09/16/05/rome-931834_1280.jpg",
+      "price": 3900.00,
+      "title": "Italian Renaissance Tour",
+      "body": "Walk through history in the footsteps of artists and rulers of Renaissance Italy.",
+      "published": true
+  },
+  {
+      "id": 26,
+      "category": 4,
+      "saleDate": "2024-04-15",
+      "featureImage": "https://cdn.pixabay.com/photo/2012/03/01/00/55/garden-19830_1280.jpg",
+      "price": 2700.00,
+      "title": "Serene Bahamas Escape",
+      "body": "Enjoy a serene escape to the less traveled islands of the Bahamas.",
+      "published": true
+  },
+  {
+      "id": 27,
+      "category": 3,
+      "saleDate": "2024-05-01",
+      "featureImage": "https://cdn.pixabay.com/photo/2020/02/17/20/29/canada-4859138_1280.jpg",
+      "price": 2500.00,
+      "title": "Canadian Maple Experience",
+      "body": "Explore the maple groves and experience the Canadian maple syrup making process.",
+      "published": true
+  },
+  {
+      "id": 28,
+      "category": 2,
+      "saleDate": "2024-05-15",
+      "featureImage": "https://cdn.pixabay.com/photo/2014/11/21/03/24/mexico-540597_1280.jpg",
+      "price": 1850.00,
+      "title": "Ancient Wonders of Yucatan",
+      "body": "Discover ancient Mayan ruins and colonial towns in the Yucatan Peninsula.",
+      "published": true
+  },
+  {
+      "id": 29,
+      "category": 1,
+      "saleDate": "2024-06-01",
+      "featureImage": "https://cdn.pixabay.com/photo/2015/03/26/09/54/pier-690673_1280.jpg",
+      "price": 2950.00,
+      "title": "Pacific Northwest Explorer",
+      "body": "Immerse yourself in the natural beauty and modern cities of the Pacific Northwest.",
+      "published": true
+  },
+  {
+      "id": 30,
+      "category": 5,
+      "saleDate": "2024-06-15",
+      "featureImage": "https://cdn.pixabay.com/photo/2017/12/10/15/16/paris-3010422_1280.jpg",
+      "price": 4100.00,
+      "title": "Paris in Spring",
+      "body": "Experience the romance of Paris in spring, from blooming gardens to historic streets.",
+      "published": true
+  }
+]
