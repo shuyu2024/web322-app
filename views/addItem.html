@@ -40,40 +40,87 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <h1>Add New Item</h1>
-                <form action="/items/add" method="post" enctype="multipart/form-data">
-                    <div class="mb-3">
-                        <label for="title" class="form-label">Title</label>
-                        <input type="text" class="form-control" id="title" name="title" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="price" class="form-label">Price</label>
-                        <input type="number" class="form-control" id="price" name="price" step="0.01" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="category" class="form-label">Category</label>
-                        <select class="form-select" id="category" name="category" required>
-                            <option selected>Choose...</option>
-                            <option value="1">USA</option>
-                            <option value="2">Mexico</option>
-                            <option value="3">Canada</option>
-                            <option value="4">Bahamas</option>
-                            <option value="5">Europe</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="featureImage" class="form-label">Feature Image</label>
-                        <input type="file" class="form-control" id="featureImage" name="featureImage" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="body" class="form-label">Description</label>
-                        <textarea class="form-control" id="body" name="body" rows="3" required></textarea>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="published" name="published">
-                        <label class="form-check-label" for="published">Publish?</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                <form method="post" action="/items/add" enctype="multipart/form-data">
+                    <fieldset>
+                      <legend>Feature Image</legend>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              id="featureImage"
+                              name="featureImage"
+                              type="file"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <br />
+                    <fieldset>
+                      <legend>Post Content</legend>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="title">Item Name:</label>
+                            <input class="form-control" id="title" name="title" type="text" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="price">Price:</label>
+                            <input class="form-control" id="price" name="price" type="text" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="body">Description:</label>
+                            <textarea
+                              class="form-control"
+                              id="body"
+                              name="body"
+                              rows="15"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="category">Category:</label>
+                            <select class="form-control" name="category" id="category">
+                              <option value="1">USA</option>
+                              <option value="2">Mexico</option>
+                              <option value="3">Canada</option>
+                              <option value="4">Bahamas</option>
+                              <option value="5">Europe</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="category">Visibility:</label>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" name="published" id="published" />
+                                Published
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <hr />
+                    <input
+                      type="submit"
+                      class="btn btn-primary pull-right"
+                      value="Add Post"
+                    /><br /><br /><br />
+                  </form>
             </div>
         </div>
     </div>

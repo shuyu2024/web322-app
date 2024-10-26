@@ -56,13 +56,13 @@ const addItem = (itemData) => {
     // Push the new item onto the items array
     items.push(itemData);
     // Persist changes by writing back to the items.json file
-    fs.writeFile(itemsFilePath, JSON.stringify(items, null, 2), err => {
-      if (err) {
-        reject("Unable to save new item");
-      } else {
-        resolve(itemData); // Resolve with the new item details
-      }
-    });
+    // fs.writeFile(itemsFilePath, JSON.stringify(items, null, 2), err => {
+    //   if (err) {
+    //     reject("Unable to save new item");
+    //   } else {
+    //     resolve(itemData); // Resolve with the new item details
+    //   }
+    // });
   });
 };
 const getItemsByCategory = (category) => {
@@ -76,7 +76,7 @@ const getItemsByCategory = (category) => {
 // Get items by minimum date
 const getItemsByMinDate = (minDateStr) => {
   return new Promise((resolve, reject) => {
-      const filteredItems = items.filter(item => new Date(item.saleDate) >= new Date(minDateStr));
+      const filteredItems = items.filter(item => new Date(item.postDate) >= new Date(minDateStr));
       if (filteredItems.length > 0) resolve(filteredItems);
       else reject("No items found with min date: " + minDateStr);
   });
