@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Latest compiled and minified Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/public/main.css" />
+    <title>WEB322 - Luxury Shop</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2c3e50;
+        }
+
+        .luxury-header {
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        .luxury-badge {
+            background-color: #54aeea;
+            color: #fff;
+        }
+
+        .luxury-item {
+            border: 1px solid #bfc9d2;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            padding: 2rem;
+        }
+
+        .luxury-item img {
+            max-height: 400px;
+            object-fit: cover;
+            width: 100%;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .luxury-list-group-item {
+            border: none;
+            padding: 1rem;
+            font-weight: bold;
+            color: #62676b;
+        }
+
+        .luxury-list-group-item:hover {
+            background-color: #abd1eb;
+            color: #fff;
+        }
+
+        .sidebar {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: #e8eaed;
+            border-radius: 8px;
+        }
+
+        .badge-info {
+            background-color: #62bbf6;
+        }
+
+        .text-muted {
+            color: #7f8c8d !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar (unchanged) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">WEB322 - Assignment - Shuyu Deng</a>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link <%= activeRoute === '/shop' ? 'active' : '' %>" href="/shop">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <%= activeRoute === '/about' ? 'active' : '' %>" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <%= activeRoute === '/categories' ? 'active' : '' %>"
+                            href="/categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <%= activeRoute === '/items' ? 'active' : '' %>" href="/items">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <%= activeRoute === '/items/add' ? 'active' : '' %>"
+                            href="/items/add">Add Item</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container my-5" style="padding-top: 90px;">
+        <!-- Sidebar for Items and Categories at the top -->
+        <div class="row mb-4">
+            <div class="col-lg-4 col-md-5">
+                <div class="sidebar">
+                    <% if (data.items && data.items.length > 0) { %>
+                    <!-- Display list of items -->
+                    <div class="mb-4">
+                        <h4 class="luxury-header">More Items</h4>
+                        <ul class="list-group">
+                            <% data.items.forEach(item => { %>
+                            <li class="list-group-item luxury-list-group-item">
+                                <a href="/shop/<%= item.id %>?category=<%= viewingCategory %>"
+                                    class="text-decoration-none">
+                                    <%= item.title %>
+                                </a>
+                            </li>
+                            <% }) %>
+                        </ul>
+                    </div>
+                    <% } %>
+
+                    <% if (data.categories && data.categories.length > 0) { %>
+                    <!-- Display list of categories -->
+                    <div class="mb-4">
+                        <h4 class="luxury-header">Categories</h4>
+                        <ul class="list-group">
+                            <% data.categories.forEach(category => { %>
+                            <li class="list-group-item luxury-list-group-item">
+                                <a href="/shop?category=<%= category.id %>" class="text-decoration-none">
+                                    <%= category.category %>
+                                </a>
+                            </li>
+                            <% }) %>
+                        </ul>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+
+            <!-- Main content for item details -->
+            <div class="col-lg-8 col-md-7">
+                <article class="luxury-item">
+                    <% if (data.item) { %>
+                    <!-- Display item details -->
+                    <h2 class="luxury-header"><%= data.item.title %></h2>
+                    <img src="<%= data.item.featureImage %>" alt="Item Image" class="img-fluid my-4 rounded" />
+                    <div class="mb-3">
+                        <%- helpers.safeHTML(data.item.body) %>
+                    </div>
+                    <div class="mb-2">
+                        <span class="badge luxury-badge">Category: <%= data.item.category %></span>
+                    </div>
+                    <div class="mb-2">
+                        <span class="badge luxury-badge">Item ID: <%= data.item.id %></span>
+                    </div>
+                    <div class="mb-4">
+                        <span class="badge bg-info text-dark">Price: $<%= data.item.price %></span>
+                    </div>
+                    <div class="text-muted">
+                        <p>Last Updated: <%= data.item.postDate %></p>
+                    </div>
+                    <% } else { %>
+                    <!-- Display message if no item is found -->
+                    <div class="text-center">
+                        <h2 class="text-danger"><%= data.message %></h2>
+                        <p class="text-muted">Please try another Item / Category</p>
+                    </div>
+                    <% } %>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest compiled and minified Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
